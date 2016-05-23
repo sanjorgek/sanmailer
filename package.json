@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/sanjorgek/sanmailer/issues"
   },
-  "homepage": "https://github.com/sanjorgek/sanmailer#readme"
+  "homepage": "https://github.com/sanjorgek/sanmailer#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "nodemailer": "^2.4.1"
+  }
 }
