@@ -1,0 +1,23 @@
+{
+  "name": "sanmailer",
+  "version": "1.0.0",
+  "description": "Adaptacion de nodemailer para los encuentros discretos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjorgek/sanmailer.git"
+  },
+  "keywords": [
+    "mail",
+    "node"
+  ],
+  "author": "SanJorgeK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanjorgek/sanmailer/issues"
+  },
+  "homepage": "https://github.com/sanjorgek/sanmailer#readme"
+}
