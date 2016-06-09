@@ -1,6 +1,9 @@
 # sanmailer
 Nodemailer adapter
 
+  [![NPM Version][npm-image]][npm-url]
+  [![NPM Downloads][downloads-image]][downloads-url]
+
 ## Config
 ~~~bash
 $ npm install sanmailer 
@@ -48,3 +51,8 @@ if(mailer.checkEmail.test(req.body.sEmail)){
   //do stuf  
 }
 ~~~
+
+[npm-image]: https://img.shields.io/npm/v/sanmailer.svg
+[npm-url]: https://npmjs.org/package/sanmailer
+[downloads-image]: https://img.shields.io/npm/dm/sanmailer.svg
+[downloads-url]: https://npmjs.org/package/sanmailer
