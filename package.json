@@ -1,6 +1,6 @@
 {
   "name": "sanmailer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Adaptacion de nodemailer para los encuentros discretos",
   "main": "index.js",
   "scripts": {

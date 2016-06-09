@@ -47,7 +47,7 @@ mailer.sendMail(
 
 ### checkMail
 ~~~js
-if(mailer.checkEmail.test(req.body.sEmail)){
+if(mailer.checkEmail(req.body.sEmail)){
   //do stuf  
 }
 ~~~

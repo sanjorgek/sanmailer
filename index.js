@@ -25,7 +25,7 @@ function init(config) {
   var transporter = nodemailer.createTransport(config);
   debug('Listo para enviar correos');
   return {
-    checkEmail: pattern,
+    checkEmail: pattern.test,
     sendMail: sendMail(transporter)
   };
 }
