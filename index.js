@@ -32,6 +32,7 @@ function initHost(config) {
 }
 
 function local() {
+  debug("Init in local host");
   return {
     checkEmail: pattern.test,
     sendMail: function(from, to, subject, body, options, cb) {
