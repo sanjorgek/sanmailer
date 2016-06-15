@@ -77,20 +77,6 @@ describe('sanmailer in local mode', function() {
         'fefrefger@mail.com',
         'dvverw@mail.com',
         'subject',
-        'wfwrgww',
-        {},
-        function(err, info) {
-          console.log(err.message);
-          done(err.message!='node-email error: subject is required');
-        }
-      );
-    });
-    
-    it("OK", function (done) {
-      sanmailer.sendMail(
-        'fefrefger@mail.com',
-        'dvverw@mail.com',
-        'subject',
         '',
         {},
         function(err, info) {
