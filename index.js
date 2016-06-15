@@ -36,12 +36,21 @@ function local() {
   return {
     checkEmail: pattern.test,
     sendMail: function(from, to, subject, body, options, cb) {
-      new Email({
+      var mailJson = {
         from: from,
         to: to,
         subject: subject,
         body: body
-      }).send(function (err) {
+      };
+      if(options.replyTo) mailJson.replyTo = options.replyTo;
+      if(options.cc) mailJson.cc = options.cc;
+      if(options.bcc) mailJson.bcc = options.bcc;
+      if(options.bcc) mailJson.bcc = options.bcc;
+      if(options.bodyType) mailJson.bodyType = options.bodyType;
+      if(options.timeout) mailJson.timeout = options.timeout;
+      if(options.altText) mailJson.altText = options.altText;
+      if(options.path) mailJson.altText = options.path;
+      new Email(mailJson).send(function (err) {
         debug(err);
         cb(err);
       });

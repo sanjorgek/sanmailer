@@ -39,7 +39,9 @@ mailer.sendMail(
   'Subject',
   'body',
   {
-    replyTo: ['mail1@mail.com', 'mail2@mail.com']
+    //optative fields
+    replyTo: ['mail1@mail.com', 'mail2@mail.com'],
+    cc: []
   },
   function(error, info){
     //handle
