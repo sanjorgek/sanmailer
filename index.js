@@ -14,6 +14,18 @@ var sendMail = function (transporter) {
     }
     if(options.attachments) mailOp.attachments = options.attachments;
     if(options.replyTo) mailOp.replyTo = options.replyTo;
+    if(options.text) mailOp.text = options.text;
+    if(options.cc) mailOp.cc = options.cc;
+    if(options.bcc) mailOp.bcc = options.bcc;
+    if(options.sender) mailOp.sender = options.sender;
+    if(options.inReplyTo) mailOp.inReplyTo = options.inReplyTo;
+    if(options.references) mailOp.references = options.references;
+    if(options.watchHtml) mailOp.watchHtml = options.watchHtml;
+    if(options.headers) mailOp.headers = options.headers;
+    if(options.raw) mailOp.raw = options.raw;
+    if(options.encoding) mailOp.encoding = options.encoding;
+    if(options.date) mailOp.date = options.date;
+    if(options.messageId) mailOp.messageId = options.messageId;
     transporter.sendMail(mailOp, function(error, info){
       debug(error);
       debug(info);
