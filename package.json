@@ -1,6 +1,6 @@
 {
   "name": "sanmailer",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Nodemailer and email adapter",
   "main": "index.js",
   "scripts": {
